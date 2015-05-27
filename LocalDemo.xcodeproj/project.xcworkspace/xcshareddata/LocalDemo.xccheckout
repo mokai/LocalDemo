@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>23A67F1A-EB7F-492B-A577-5A09CB12DB9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LocalDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B422A1415040AC186DE189268D9969F8ABAAADB</key>
+		<string>https://github.com/mokai/LocalDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LocalDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B422A1415040AC186DE189268D9969F8ABAAADB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mokai/LocalDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5B422A1415040AC186DE189268D9969F8ABAAADB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B422A1415040AC186DE189268D9969F8ABAAADB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LocalDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
