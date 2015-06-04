@@ -2,4 +2,7 @@
 "好友"="Friends";
 "我"="Me";
 
-"ic_home" = "ic_home_en";
+"取消" = "cancel";
+"切换" = "change";
+
+"search_logo" = "google_log";

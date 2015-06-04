@@ -1,1 +1,33 @@
 
+/* Class = "UILabel"; text = "位置"; ObjectID = "58Y-qi-yX4"; */
+"58Y-qi-yX4.text" = "位置";
+
+/* Class = "UILabel"; text = "切换语言"; ObjectID = "KV8-9h-1jp"; */
+"KV8-9h-1jp.text" = "切换语言";
+
+/* Class = "UIButton"; normalTitle = "中文"; ObjectID = "KoC-VV-kqF"; */
+"KoC-VV-kqF.normalTitle" = "中文";
+
+/* Class = "UILabel"; text = "性别"; ObjectID = "VoY-Yx-n2b"; */
+"VoY-Yx-n2b.text" = "性别";
+
+/* Class = "UILabel"; text = "广州"; ObjectID = "bk7-EL-7bA"; */
+"bk7-EL-7bA.text" = "广州";
+
+/* Class = "UITabBarItem"; title = "我"; ObjectID = "jw7-Cs-SES"; */
+"jw7-Cs-SES.title" = "我";
+
+/* Class = "UITabBarItem"; title = "首页"; ObjectID = "loc-Ii-q2C"; */
+"loc-Ii-q2C.title" = "首页";
+
+/* Class = "UIButton"; normalTitle = "百度一下"; ObjectID = "lvS-61-dG7"; */
+"lvS-61-dG7.normalTitle" = "百度一下";
+
+/* Class = "UILabel"; text = "你好，凯"; ObjectID = "ry1-bN-7Cn"; */
+"ry1-bN-7Cn.text" = "你好，凯";
+
+/* Class = "UIButton"; normalTitle = "退出登录"; ObjectID = "vj3-is-bOB"; */
+"vj3-is-bOB.normalTitle" = "退出登录";
+
+/* Class = "UILabel"; text = "男"; ObjectID = "vl1-2K-yx2"; */
+"vl1-2K-yx2.text" = "男";
