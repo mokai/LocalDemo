@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        logoView.image = localizedImage("search_logo")
+        logoView.image = UIImage(named: localized("search_logo"))
     }
     
     /**

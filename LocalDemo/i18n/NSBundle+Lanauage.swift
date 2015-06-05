@@ -8,12 +8,9 @@
 
 import Foundation
 
-
 /**
-*  当调用 onLanguage后替换掉mainBundle为当前语言的bundle
+*  当调用onLanguage后替换掉mainBundle为当前语言的bundle
 */
-
-
 private  let _bundle:UnsafePointer<Void> =  unsafeBitCast(0,UnsafePointer<Void>.self)
 class BundleEx: NSBundle {
     override func localizedStringForKey(key: String, value: String?, table tableName: String?) -> String {
@@ -30,11 +27,13 @@ extension NSBundle{
         static var onceToken : dispatch_once_t = 0
     }
     func onLanguage(){
+        //替换NSBundle.mainBundle()为自定义的BundleEx
         dispatch_once(&Static.onceToken) {
             object_setClass(NSBundle.mainBundle(), BundleEx.self)
         }
     }
     
+    //当前语言的bundle
     func languageBundle()->NSBundle?{
         return Languager.standardLanguager().currentLanguageBundle
     }

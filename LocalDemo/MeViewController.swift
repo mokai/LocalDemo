@@ -56,9 +56,10 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             self.pickerView!.dataSource = self
             self.pickerView!.delegate = self
             languageView.addSubview(self.pickerView!)
-            var languagesVal:NSArray = APPLanguages.allValues
-            self.pickerView?.selectRow(languagesVal.indexOfObject(Languager.standardLanguager().currentLanguage), inComponent: 0, animated: false)
         }
+        var languagesVal:NSArray = APPLanguages.allValues
+        self.pickerView?.selectRow(languagesVal.indexOfObject(Languager.standardLanguager().currentLanguage), inComponent: 0, animated: false)
+        
         (languageBgView?.viewWithTag(10) as! UIButton).setTitle(localized("取消"), forState: .Normal)
         (languageBgView?.viewWithTag(11) as! UIButton).setTitle(localized("切换"), forState: .Normal)
         UIApplication.sharedApplication().keyWindow?.addSubview(self.languageBgView!)
@@ -84,7 +85,6 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         rootViewC.selectedIndex = 1  //回到设置页面
         UIApplication.sharedApplication().delegate!.window!!.rootViewController = rootViewC
     }
-    
     
     
     //MARK:delegate

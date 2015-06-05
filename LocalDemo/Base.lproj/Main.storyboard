@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cov-kz-6Ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="437"/>
+            <point key="canvasLocation" x="300" y="430"/>
         </scene>
         <!--首页-->
         <scene sceneID="Vbi-h6-mJA">
@@ -163,7 +163,6 @@
         <!--Search View Controller-->
         <scene sceneID="Y1C-ee-emu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Clm-Gz-4Y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController hidesBottomBarWhenPushed="YES" id="xQw-yr-EGS" customClass="SearchViewController" customModule="LocalDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iZf-lt-BBa"/>
@@ -211,6 +210,7 @@
                         <outlet property="webView" destination="zEC-M9-dVR" id="LJZ-k5-5kz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Clm-Gz-4Y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="-201"/>
         </scene>
@@ -223,9 +223,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="RtZ-6N-XRB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="selectedImageTintColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                     </tabBar>
                     <connections>
                         <segue destination="KH0-Ga-fyh" kind="relationship" relationship="viewControllers" id="M5G-tH-we0"/>

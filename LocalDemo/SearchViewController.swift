@@ -22,7 +22,7 @@ class SearchViewController: UIViewController {
         
         //判断当前语言是否为中文
         var url:String?
-        if(Languager.standardLanguager().currentLanguage == APPLanguages.allValues[0] as! String){
+        if(Languager.standardLanguager().currentLanguage != "en"){
             url = baidu + text!
         }else{
             url = google + text!
