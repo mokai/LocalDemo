@@ -20,7 +20,7 @@ class Languager: NSObject {
     
     override init() {
         super.init()
-        self.initLanguage()
+        self.initLanguages()
     }
     
     //当前语言Bundle
@@ -42,9 +42,11 @@ class Languager: NSObject {
             if let path = NSBundle.mainBundle().pathForResource(newLanguage, ofType: "lproj" ),let bundel = NSBundle(path:path){
                 self.currentLanguageBundle = bundel
                 self._currentLanguage = newLanguage
-            }else{//如果当前语言的lproj则加载base.lproj
-                self.currentLanguageBundle =  NSBundle(path:NSBundle.mainBundle().pathForResource("Base", ofType: "lproj" )!)
-                self._currentLanguage = "Base"
+            }else{
+                //如果不支持当前语言则加载info中Localization native development region中的值的lporj
+                var defaultLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
+                self.currentLanguageBundle =  NSBundle(path:NSBundle.mainBundle().pathForResource(defaultLanguage, ofType: "lproj" )!)
+                self._currentLanguage = defaultLanguage
             }
             var def = NSUserDefaults.standardUserDefaults()
             def.setValue([self._currentLanguage!], forKey:kUserLanguage)
@@ -53,7 +55,7 @@ class Languager: NSObject {
             NSBundle.mainBundle().onLanguage()
         }
     }
-
+    
     // 单列
     class func standardLanguager()->Languager{
         dispatch_once(&Static.onceToken) {
@@ -63,13 +65,15 @@ class Languager: NSObject {
     }
     
     //初始化
-    private func initLanguage(){
-        self._currentLanguage = (NSUserDefaults.standardUserDefaults().objectForKey(kUserLanguage) as! Array<String>)[0]
-        if let path = NSBundle.mainBundle().pathForResource(self._currentLanguage, ofType: "lproj" ),let bundel = NSBundle(path:path){
+    func initLanguages(){
+        let language = (NSUserDefaults.standardUserDefaults().objectForKey(kUserLanguage) as! Array<String>)[0]
+        if let path = NSBundle.mainBundle().pathForResource(language, ofType: "lproj" ),let bundel = NSBundle(path:path){
             self.currentLanguageBundle = bundel
-        }else{ //如果当前语言的lproj则加载base.lproj
-            self.currentLanguageBundle =  NSBundle(path:NSBundle.mainBundle().pathForResource("Base", ofType: "lproj" )!)
-            self._currentLanguage = "Base"
+            self._currentLanguage = language
+        }else{
+            //如果不支持当前语言则加载info中Localization native development region中的值的lporj,设置为当前语言
+            self.currentLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
+            println("Languager:\(language)不支持，切换成默认语言\(self._currentLanguage!)")
         }
     }
     
