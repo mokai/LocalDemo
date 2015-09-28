@@ -31,21 +31,21 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             languageBgView?.backgroundColor = UIColor(red:0.000 , green:0.000 , blue:0.000, alpha:0.8)
             languageBgView?.addTarget(self, action: Selector("hide"), forControlEvents: .TouchUpInside)
             
-            var languageView = UIView(frame: CGRectMake(0, languageBgView!.frame.size.height - 200, languageBgView!.frame.size.width, 200))
+            let languageView = UIView(frame: CGRectMake(0, languageBgView!.frame.size.height - 200, languageBgView!.frame.size.width, 200))
             self.languageBgView?.addSubview(languageView)
             languageView.backgroundColor = UIColor.whiteColor()
             
-            var topView = UIView(frame: CGRectMake(0, 0, languageView.frame.size.width, 40))
+            let topView = UIView(frame: CGRectMake(0, 0, languageView.frame.size.width, 40))
             languageView.addSubview(topView)
             
-            var cancelBtn = UIButton(frame: CGRectMake(10, 0, 60, 40))
+            let cancelBtn = UIButton(frame: CGRectMake(10, 0, 60, 40))
             cancelBtn.tag = 10
             cancelBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
                 , forState: .Normal)
             cancelBtn.addTarget(self, action: Selector("hide"), forControlEvents: .TouchUpInside)
             topView.addSubview(cancelBtn)
             
-            var changeBtn = UIButton(frame: CGRectMake(topView.frame.size.width-70, 0, 70, 40))
+            let changeBtn = UIButton(frame: CGRectMake(topView.frame.size.width-70, 0, 70, 40))
             changeBtn.tag = 11
             changeBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
                 , forState: .Normal)
@@ -57,7 +57,7 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             self.pickerView!.delegate = self
             languageView.addSubview(self.pickerView!)
         }
-        var languagesVal:NSArray = APPLanguages.allValues
+        let languagesVal:NSArray = APPLanguages.allValues
         self.pickerView?.selectRow(languagesVal.indexOfObject(Languager.standardLanguager().currentLanguage), inComponent: 0, animated: false)
         
         (languageBgView?.viewWithTag(10) as! UIButton).setTitle(localized("取消"), forState: .Normal)
@@ -72,8 +72,8 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     
     //MARK: 切换语言
     func change(){
-        var row = self.pickerView!.selectedRowInComponent(0)
-        var key = APPLanguages.allKeys[row] as! String
+        let row = self.pickerView!.selectedRowInComponent(0)
+        let key = APPLanguages.allKeys[row] as! String
         Languager.standardLanguager().currentLanguage = APPLanguages.objectForKey(key) as! String
         
         self.languageBtn.setTitle(key, forState: .Normal)

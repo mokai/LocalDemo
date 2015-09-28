@@ -20,8 +20,8 @@ class HomeViewController: UIViewController {
     
     /**
     传递参数
-    :param: segue
-    :param: sender
+    - parameter segue:
+    - parameter sender:
     */
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let searchVC = segue.destinationViewController as? SearchViewController {

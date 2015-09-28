@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52601B571BB8EAFB000D644B /* Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B4F1BB8EAFB000D644B /* Languager.swift */; settings = {ASSET_TAGS = (); }; };
+		52601B581BB8EAFB000D644B /* NSBundle+Lanauage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */; settings = {ASSET_TAGS = (); }; };
+		52601B591BB8EAFB000D644B /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = 52601B521BB8EAFB000D644B /* AutoGenStrings.py */; settings = {ASSET_TAGS = (); }; };
+		52601B5A1BB8EAFB000D644B /* UIImageView+Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */; settings = {ASSET_TAGS = (); }; };
+		52601B5B1BB8EAFB000D644B /* UITextView+Languageer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */; settings = {ASSET_TAGS = (); }; };
+		52601B5C1BB8EAFB000D644B /* push in Resources */ = {isa = PBXBuildFile; fileRef = 52601B551BB8EAFB000D644B /* push */; settings = {ASSET_TAGS = (); }; };
+		52601B5D1BB8EAFB000D644B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 52601B561BB8EAFB000D644B /* README.md */; settings = {ASSET_TAGS = (); }; };
 		526A99D61B155E050031482A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A99D51B155E050031482A /* AppDelegate.swift */; };
 		526A99DB1B155E050031482A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A99D91B155E050031482A /* Main.storyboard */; };
 		526A99DD1B155E050031482A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526A99DC1B155E050031482A /* Images.xcassets */; };
 		526A99E01B155E050031482A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526A99DE1B155E050031482A /* LaunchScreen.xib */; };
 		526A99EC1B155E050031482A /* LocalDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A99EB1B155E050031482A /* LocalDemoTests.swift */; };
 		526A9A031B15A7FC0031482A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 526A9A051B15A7FC0031482A /* Localizable.strings */; };
-		5281A9921B1FEAB3001EF49E /* Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A98A1B1FEAB3001EF49E /* Languager.swift */; };
-		5281A9951B1FEAB3001EF49E /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = 5281A98F1B1FEAB3001EF49E /* AutoGenStrings.py */; };
-		5281A9961B1FEAB3001EF49E /* UIImageView+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A9901B1FEAB3001EF49E /* UIImageView+Language.swift */; };
-		5281A9971B1FEAB3001EF49E /* UITextView+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A9911B1FEAB3001EF49E /* UITextView+Language.swift */; };
-		5281A9991B1FEB05001EF49E /* NSBundle+Lanauage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A9981B1FEB05001EF49E /* NSBundle+Lanauage.swift */; };
 		5281A99D1B1FECAC001EF49E /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A99C1B1FECAC001EF49E /* MeViewController.swift */; };
 		5281A99F1B1FECB8001EF49E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A99E1B1FECB8001EF49E /* HomeViewController.swift */; };
 		5281A9A31B1FF370001EF49E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281A9A21B1FF370001EF49E /* SearchViewController.swift */; };
@@ -35,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52601B4F1BB8EAFB000D644B /* Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languager.swift; sourceTree = "<group>"; };
+		52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Lanauage.swift"; sourceTree = "<group>"; };
+		52601B521BB8EAFB000D644B /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
+		52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Languager.swift"; sourceTree = "<group>"; };
+		52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Languageer.swift"; sourceTree = "<group>"; };
+		52601B551BB8EAFB000D644B /* push */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = push; sourceTree = "<group>"; };
+		52601B561BB8EAFB000D644B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		526A99D01B155E050031482A /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526A99D41B155E050031482A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526A99D51B155E050031482A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,11 +57,6 @@
 		526A9A091B15A8630031482A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5275023F1B213E88009242B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		527502411B213E88009242B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		5281A98A1B1FEAB3001EF49E /* Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languager.swift; sourceTree = "<group>"; };
-		5281A98F1B1FEAB3001EF49E /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
-		5281A9901B1FEAB3001EF49E /* UIImageView+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Language.swift"; sourceTree = "<group>"; };
-		5281A9911B1FEAB3001EF49E /* UITextView+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Language.swift"; sourceTree = "<group>"; };
-		5281A9981B1FEB05001EF49E /* NSBundle+Lanauage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Lanauage.swift"; sourceTree = "<group>"; };
 		5281A99C1B1FECAC001EF49E /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5281A99E1B1FECB8001EF49E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5281A9A21B1FF370001EF49E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52601B4D1BB8EAFB000D644B /* iOS-i18n */ = {
+			isa = PBXGroup;
+			children = (
+				52601B4E1BB8EAFB000D644B /* i18n */,
+				52601B551BB8EAFB000D644B /* push */,
+				52601B561BB8EAFB000D644B /* README.md */,
+			);
+			path = "iOS-i18n";
+			sourceTree = "<group>";
+		};
+		52601B4E1BB8EAFB000D644B /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				52601B4F1BB8EAFB000D644B /* Languager.swift */,
+				52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */,
+				52601B511BB8EAFB000D644B /* RunScript */,
+				52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */,
+				52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		52601B511BB8EAFB000D644B /* RunScript */ = {
+			isa = PBXGroup;
+			children = (
+				52601B521BB8EAFB000D644B /* AutoGenStrings.py */,
+			);
+			path = RunScript;
+			sourceTree = "<group>";
+		};
 		526A99C71B155E050031482A = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +135,7 @@
 		526A99D21B155E050031482A /* LocalDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5281A9891B1FEAB3001EF49E /* i18n */,
+				52601B4D1BB8EAFB000D644B /* iOS-i18n */,
 				526A9A111B15B3A50031482A /* images */,
 				526A99D51B155E050031482A /* AppDelegate.swift */,
 				526A99D91B155E050031482A /* Main.storyboard */,
@@ -149,26 +183,6 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		5281A9891B1FEAB3001EF49E /* i18n */ = {
-			isa = PBXGroup;
-			children = (
-				5281A98E1B1FEAB3001EF49E /* RunScript */,
-				5281A98A1B1FEAB3001EF49E /* Languager.swift */,
-				5281A9901B1FEAB3001EF49E /* UIImageView+Language.swift */,
-				5281A9911B1FEAB3001EF49E /* UITextView+Language.swift */,
-				5281A9981B1FEB05001EF49E /* NSBundle+Lanauage.swift */,
-			);
-			path = i18n;
-			sourceTree = "<group>";
-		};
-		5281A98E1B1FEAB3001EF49E /* RunScript */ = {
-			isa = PBXGroup;
-			children = (
-				5281A98F1B1FEAB3001EF49E /* AutoGenStrings.py */,
-			);
-			path = RunScript;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,7 +193,7 @@
 				526A99CC1B155E050031482A /* Sources */,
 				526A99CD1B155E050031482A /* Frameworks */,
 				526A99CE1B155E050031482A /* Resources */,
-				52A46B6B1B217CC9002DE08B /* ShellScript */,
+				52A46B6B1B217CC9002DE08B /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -214,6 +228,8 @@
 		526A99C81B155E050031482A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = gongkai;
 				TargetAttributes = {
@@ -252,11 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				526A99DB1B155E050031482A /* Main.storyboard in Resources */,
+				52601B5C1BB8EAFB000D644B /* push in Resources */,
 				526A9A031B15A7FC0031482A /* Localizable.strings in Resources */,
 				526A99E01B155E050031482A /* LaunchScreen.xib in Resources */,
+				52601B591BB8EAFB000D644B /* AutoGenStrings.py in Resources */,
 				52D0BE401B1F006F006D3C2A /* avater@2x.png in Resources */,
 				526A99DD1B155E050031482A /* Images.xcassets in Resources */,
-				5281A9951B1FEAB3001EF49E /* AutoGenStrings.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,18 +287,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52A46B6B1B217CC9002DE08B /* ShellScript */ = {
+		52A46B6B1B217CC9002DE08B /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python ${SRCROOT}/${TARGET_NAME}/i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
+			shellScript = "python ${SRCROOT}/iOS-i18n/i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}//参数为StoryBoard，XIB所在目录";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -290,14 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5281A9991B1FEB05001EF49E /* NSBundle+Lanauage.swift in Sources */,
+				52601B581BB8EAFB000D644B /* NSBundle+Lanauage.swift in Sources */,
+				52601B5B1BB8EAFB000D644B /* UITextView+Languageer.swift in Sources */,
+				52601B5A1BB8EAFB000D644B /* UIImageView+Languager.swift in Sources */,
 				5281A99D1B1FECAC001EF49E /* MeViewController.swift in Sources */,
-				5281A9921B1FEAB3001EF49E /* Languager.swift in Sources */,
 				5281A9A31B1FF370001EF49E /* SearchViewController.swift in Sources */,
 				5281A99F1B1FECB8001EF49E /* HomeViewController.swift in Sources */,
-				5281A9971B1FEAB3001EF49E /* UITextView+Language.swift in Sources */,
+				52601B5D1BB8EAFB000D644B /* README.md in Sources */,
 				526A99D61B155E050031482A /* AppDelegate.swift in Sources */,
-				5281A9961B1FEAB3001EF49E /* UIImageView+Language.swift in Sources */,
+				52601B571BB8EAFB000D644B /* Languager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

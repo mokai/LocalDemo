@@ -44,11 +44,11 @@ class Languager: NSObject {
                 self._currentLanguage = newLanguage
             }else{
                 //如果不支持当前语言则加载info中Localization native development region中的值的lporj
-                let defaultLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as String) as! String
+                var defaultLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
                 self.currentLanguageBundle =  NSBundle(path:NSBundle.mainBundle().pathForResource(defaultLanguage, ofType: "lproj" )!)
                 self._currentLanguage = defaultLanguage
             }
-            let def = NSUserDefaults.standardUserDefaults()
+            var def = NSUserDefaults.standardUserDefaults()
             def.setValue([self._currentLanguage!], forKey:kUserLanguage)
             def.synchronize()
             
@@ -72,7 +72,7 @@ class Languager: NSObject {
             self._currentLanguage = language
         }else{
             //如果不支持当前语言则加载info中Localization native development region中的值的lporj,设置为当前语言
-            self.currentLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as String) as! String
+            self.currentLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
             print("Languager:\(language)不支持，切换成默认语言\(self._currentLanguage!)")
         }
     }
