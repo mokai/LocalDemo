@@ -25,6 +25,7 @@ extension NSBundle{
     private struct Static {
         static var onceToken : dispatch_once_t = 0
     }
+    
     func onLanguage(){
         //替换NSBundle.mainBundle()为自定义的BundleEx
         dispatch_once(&Static.onceToken) {

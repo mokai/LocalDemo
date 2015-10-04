@@ -26,7 +26,6 @@ class Languager: NSObject {
     //当前语言Bundle
     internal var currentLanguageBundle:NSBundle?
     
-    
     // 当前语言获取与切换
     var currentLanguage:String{
         get{
@@ -44,11 +43,11 @@ class Languager: NSObject {
                 self._currentLanguage = newLanguage
             }else{
                 //如果不支持当前语言则加载info中Localization native development region中的值的lporj
-                var defaultLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
+                let defaultLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as String) as! String
                 self.currentLanguageBundle =  NSBundle(path:NSBundle.mainBundle().pathForResource(defaultLanguage, ofType: "lproj" )!)
                 self._currentLanguage = defaultLanguage
             }
-            var def = NSUserDefaults.standardUserDefaults()
+            let def = NSUserDefaults.standardUserDefaults()
             def.setValue([self._currentLanguage!], forKey:kUserLanguage)
             def.synchronize()
             
@@ -72,7 +71,7 @@ class Languager: NSObject {
             self._currentLanguage = language
         }else{
             //如果不支持当前语言则加载info中Localization native development region中的值的lporj,设置为当前语言
-            self.currentLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as! String) as! String
+            self.currentLanguage = (NSBundle.mainBundle().infoDictionary! as NSDictionary).valueForKey(kCFBundleDevelopmentRegionKey as String) as! String
             print("Languager:\(language)不支持，切换成默认语言\(self._currentLanguage!)")
         }
     }
@@ -102,7 +101,7 @@ class Languager: NSObject {
     }
     
     /**
-    获取当前语言的image
+    获取当前语言的image,注意，此处加载的是2x图片
     */
     func image(name:String)->UIImage?{
         let path = self.currentLanguageBundle?.pathForResource(name+"@2x", ofType: "png")

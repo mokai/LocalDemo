@@ -74,12 +74,15 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     func change(){
         let row = self.pickerView!.selectedRowInComponent(0)
         let key = APPLanguages.allKeys[row] as! String
+        
+        //切换语言
         Languager.standardLanguager().currentLanguage = APPLanguages.objectForKey(key) as! String
+        
         
         self.languageBtn.setTitle(key, forState: .Normal)
         self.hide()
         
-        //重新设置root viewcontroller
+        //重新设置root viewcontroller，重新加载时会加载切换后的语言资源
         let mainSb = UIStoryboard(name: "Main", bundle: nil)
         let rootViewC = mainSb.instantiateInitialViewController() as! UITabBarController
         rootViewC.selectedIndex = 1  //回到设置页面
@@ -96,8 +99,8 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         return APPLanguages.count
     }
     
-    func pickerView(pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int)->String{
-        return APPLanguages.allKeys[row] as! String
+    func pickerView(pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int)->String?{
+        return APPLanguages.allKeys[row] as? String
     }
     
     

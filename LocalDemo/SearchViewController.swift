@@ -30,6 +30,7 @@ class SearchViewController: UIViewController {
         let req = NSURLRequest(URL: NSURL(string: url!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!)
         webView.loadRequest(req)
     }
+    
     @IBAction func back(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
