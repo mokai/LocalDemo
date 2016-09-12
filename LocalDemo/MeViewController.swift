@@ -72,7 +72,7 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     }
     
     //MARK: 切换语言
-    func change(){
+    func change() {
         let row = self.pickerView!.selectedRowInComponent(0)
         let key = APPLanguages.allKeys[row] as! String
         
@@ -93,11 +93,11 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     
     
     //MARK:delegate
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return APPLanguages.count
     }
     

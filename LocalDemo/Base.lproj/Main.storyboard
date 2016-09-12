@@ -24,6 +24,9 @@
                                     <constraint firstAttribute="width" constant="50" id="1HM-s6-OEi"/>
                                     <constraint firstAttribute="height" constant="50" id="7S3-4p-aDO"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="local" value="avater"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好，凯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-bN-7Cn">
                                 <rect key="frame" x="0.0" y="163" width="320" height="50"/>
