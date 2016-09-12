@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52601B571BB8EAFB000D644B /* Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B4F1BB8EAFB000D644B /* Languager.swift */; settings = {ASSET_TAGS = (); }; };
-		52601B581BB8EAFB000D644B /* NSBundle+Lanauage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */; settings = {ASSET_TAGS = (); }; };
-		52601B591BB8EAFB000D644B /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = 52601B521BB8EAFB000D644B /* AutoGenStrings.py */; settings = {ASSET_TAGS = (); }; };
-		52601B5A1BB8EAFB000D644B /* UIImageView+Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */; settings = {ASSET_TAGS = (); }; };
-		52601B5B1BB8EAFB000D644B /* UITextView+Languageer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */; settings = {ASSET_TAGS = (); }; };
-		52601B5C1BB8EAFB000D644B /* push in Resources */ = {isa = PBXBuildFile; fileRef = 52601B551BB8EAFB000D644B /* push */; settings = {ASSET_TAGS = (); }; };
-		52601B5D1BB8EAFB000D644B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 52601B561BB8EAFB000D644B /* README.md */; settings = {ASSET_TAGS = (); }; };
+		523F29991D851A6D007DF4A5 /* Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F29921D851A6D007DF4A5 /* Languager.swift */; };
+		523F299A1D851A6D007DF4A5 /* NSBundle+Lanauage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F29931D851A6D007DF4A5 /* NSBundle+Lanauage.swift */; };
+		523F299C1D851A6D007DF4A5 /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = 523F29961D851A6D007DF4A5 /* AutoGenStrings.py */; };
+		523F299D1D851A6D007DF4A5 /* UIImageView+Languager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F29971D851A6D007DF4A5 /* UIImageView+Languager.swift */; };
+		523F299E1D851A6D007DF4A5 /* UITextView+Languageer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F29981D851A6D007DF4A5 /* UITextView+Languageer.swift */; };
+		523F29A21D853DD8007DF4A5 /* avater1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 523F29A41D853DD8007DF4A5 /* avater1@3x.png */; };
 		526A99D61B155E050031482A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A99D51B155E050031482A /* AppDelegate.swift */; };
 		526A99DB1B155E050031482A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A99D91B155E050031482A /* Main.storyboard */; };
 		526A99DD1B155E050031482A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526A99DC1B155E050031482A /* Images.xcassets */; };
@@ -37,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52601B4F1BB8EAFB000D644B /* Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languager.swift; sourceTree = "<group>"; };
-		52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Lanauage.swift"; sourceTree = "<group>"; };
-		52601B521BB8EAFB000D644B /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
-		52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Languager.swift"; sourceTree = "<group>"; };
-		52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Languageer.swift"; sourceTree = "<group>"; };
-		52601B551BB8EAFB000D644B /* push */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = push; sourceTree = "<group>"; };
-		52601B561BB8EAFB000D644B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		523F29921D851A6D007DF4A5 /* Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languager.swift; sourceTree = "<group>"; };
+		523F29931D851A6D007DF4A5 /* NSBundle+Lanauage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Lanauage.swift"; sourceTree = "<group>"; };
+		523F29961D851A6D007DF4A5 /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
+		523F29971D851A6D007DF4A5 /* UIImageView+Languager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Languager.swift"; sourceTree = "<group>"; };
+		523F29981D851A6D007DF4A5 /* UITextView+Languageer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Languageer.swift"; sourceTree = "<group>"; };
+		523F29A31D853DD8007DF4A5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/avater1@3x.png"; sourceTree = "<group>"; };
+		523F29A51D853DDC007DF4A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/avater1@3x.png"; sourceTree = "<group>"; };
 		526A99D01B155E050031482A /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526A99D41B155E050031482A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526A99D51B155E050031482A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,32 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52601B4D1BB8EAFB000D644B /* iOS-i18n */ = {
+		523F29911D851A6D007DF4A5 /* iOS-i18n */ = {
 			isa = PBXGroup;
 			children = (
-				52601B4E1BB8EAFB000D644B /* i18n */,
-				52601B551BB8EAFB000D644B /* push */,
-				52601B561BB8EAFB000D644B /* README.md */,
+				523F29951D851A6D007DF4A5 /* RunScript */,
+				523F29921D851A6D007DF4A5 /* Languager.swift */,
+				523F29931D851A6D007DF4A5 /* NSBundle+Lanauage.swift */,
+				523F29971D851A6D007DF4A5 /* UIImageView+Languager.swift */,
+				523F29981D851A6D007DF4A5 /* UITextView+Languageer.swift */,
 			);
 			path = "iOS-i18n";
 			sourceTree = "<group>";
 		};
-		52601B4E1BB8EAFB000D644B /* i18n */ = {
+		523F29951D851A6D007DF4A5 /* RunScript */ = {
 			isa = PBXGroup;
 			children = (
-				52601B4F1BB8EAFB000D644B /* Languager.swift */,
-				52601B501BB8EAFB000D644B /* NSBundle+Lanauage.swift */,
-				52601B511BB8EAFB000D644B /* RunScript */,
-				52601B531BB8EAFB000D644B /* UIImageView+Languager.swift */,
-				52601B541BB8EAFB000D644B /* UITextView+Languageer.swift */,
-			);
-			path = i18n;
-			sourceTree = "<group>";
-		};
-		52601B511BB8EAFB000D644B /* RunScript */ = {
-			isa = PBXGroup;
-			children = (
-				52601B521BB8EAFB000D644B /* AutoGenStrings.py */,
+				523F29961D851A6D007DF4A5 /* AutoGenStrings.py */,
 			);
 			path = RunScript;
 			sourceTree = "<group>";
@@ -135,7 +124,7 @@
 		526A99D21B155E050031482A /* LocalDemo */ = {
 			isa = PBXGroup;
 			children = (
-				52601B4D1BB8EAFB000D644B /* iOS-i18n */,
+				523F29911D851A6D007DF4A5 /* iOS-i18n */,
 				526A9A111B15B3A50031482A /* images */,
 				526A99D51B155E050031482A /* AppDelegate.swift */,
 				526A99D91B155E050031482A /* Main.storyboard */,
@@ -178,6 +167,7 @@
 		526A9A111B15B3A50031482A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				523F29A41D853DD8007DF4A5 /* avater1@3x.png */,
 				52D0BE421B1F006F006D3C2A /* avater@2x.png */,
 			);
 			path = images;
@@ -267,11 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523F29A21D853DD8007DF4A5 /* avater1@3x.png in Resources */,
 				526A99DB1B155E050031482A /* Main.storyboard in Resources */,
-				52601B5C1BB8EAFB000D644B /* push in Resources */,
 				526A9A031B15A7FC0031482A /* Localizable.strings in Resources */,
 				526A99E01B155E050031482A /* LaunchScreen.xib in Resources */,
-				52601B591BB8EAFB000D644B /* AutoGenStrings.py in Resources */,
+				523F299C1D851A6D007DF4A5 /* AutoGenStrings.py in Resources */,
 				52D0BE401B1F006F006D3C2A /* avater@2x.png in Resources */,
 				526A99DD1B155E050031482A /* Images.xcassets in Resources */,
 			);
@@ -299,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python ${SRCROOT}/iOS-i18n/i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}//参数为StoryBoard，XIB所在目录";
+			shellScript = "python ${SRCROOT}/${TARGET_NAME}/iOS-i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}//参数为StoryBoard，XIB所在目录";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -308,15 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52601B581BB8EAFB000D644B /* NSBundle+Lanauage.swift in Sources */,
-				52601B5B1BB8EAFB000D644B /* UITextView+Languageer.swift in Sources */,
-				52601B5A1BB8EAFB000D644B /* UIImageView+Languager.swift in Sources */,
+				523F299A1D851A6D007DF4A5 /* NSBundle+Lanauage.swift in Sources */,
 				5281A99D1B1FECAC001EF49E /* MeViewController.swift in Sources */,
 				5281A9A31B1FF370001EF49E /* SearchViewController.swift in Sources */,
+				523F299D1D851A6D007DF4A5 /* UIImageView+Languager.swift in Sources */,
 				5281A99F1B1FECB8001EF49E /* HomeViewController.swift in Sources */,
-				52601B5D1BB8EAFB000D644B /* README.md in Sources */,
 				526A99D61B155E050031482A /* AppDelegate.swift in Sources */,
-				52601B571BB8EAFB000D644B /* Languager.swift in Sources */,
+				523F299E1D851A6D007DF4A5 /* UITextView+Languageer.swift in Sources */,
+				523F29991D851A6D007DF4A5 /* Languager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +328,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		523F29A41D853DD8007DF4A5 /* avater1@3x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523F29A31D853DD8007DF4A5 /* zh-Hans */,
+				523F29A51D853DDC007DF4A5 /* en */,
+			);
+			name = "avater1@3x.png";
+			sourceTree = "<group>";
+		};
 		526A99D91B155E050031482A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

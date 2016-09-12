@@ -12,10 +12,9 @@ import UIKit
 //MARK:APP语言
 let APPLanguages:NSDictionary = ["中文":"zh-Hans","English":"en"]
 
-
-class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate{
-     private var languageBgView:UIButton?
-     private var pickerView:UIPickerView?
+class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    private var languageBgView: UIButton?
+    private var pickerView: UIPickerView?
     
     @IBOutlet weak var languageBtn: UIButton!
     
@@ -29,7 +28,7 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         if(languageBgView == nil){
             languageBgView = UIButton(frame: UIScreen.mainScreen().bounds)
             languageBgView?.backgroundColor = UIColor(red:0.000 , green:0.000 , blue:0.000, alpha:0.8)
-            languageBgView?.addTarget(self, action: Selector("hide"), forControlEvents: .TouchUpInside)
+            languageBgView?.addTarget(self, action: #selector(MeViewController.hide), forControlEvents: .TouchUpInside)
             
             let languageView = UIView(frame: CGRectMake(0, languageBgView!.frame.size.height - 200, languageBgView!.frame.size.width, 200))
             self.languageBgView?.addSubview(languageView)
@@ -42,14 +41,14 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             cancelBtn.tag = 10
             cancelBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
                 , forState: .Normal)
-            cancelBtn.addTarget(self, action: Selector("hide"), forControlEvents: .TouchUpInside)
+            cancelBtn.addTarget(self, action: #selector(MeViewController.hide), forControlEvents: .TouchUpInside)
             topView.addSubview(cancelBtn)
             
             let changeBtn = UIButton(frame: CGRectMake(topView.frame.size.width-70, 0, 70, 40))
             changeBtn.tag = 11
             changeBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
                 , forState: .Normal)
-            changeBtn.addTarget(self, action: Selector("change"), forControlEvents: .TouchUpInside)
+            changeBtn.addTarget(self, action: #selector(MeViewController.change), forControlEvents: .TouchUpInside)
             topView.addSubview(changeBtn)
             
             self.pickerView = UIPickerView(frame: CGRectMake(0, 40, languageView.frame.size.width, languageView.frame.size.height-40))
@@ -63,12 +62,14 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         (languageBgView?.viewWithTag(10) as! UIButton).setTitle(localized("取消"), forState: .Normal)
         (languageBgView?.viewWithTag(11) as! UIButton).setTitle(localized("切换"), forState: .Normal)
         UIApplication.sharedApplication().keyWindow?.addSubview(self.languageBgView!)
+        
+        
+        
     }
     
     func hide(){
         self.languageBgView?.removeFromSuperview()
     }
-    
     
     //MARK: 切换语言
     func change(){
@@ -81,6 +82,7 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         
         self.languageBtn.setTitle(key, forState: .Normal)
         self.hide()
+        
         
         //重新设置root viewcontroller，重新加载时会加载切换后的语言资源
         let mainSb = UIStoryboard(name: "Main", bundle: nil)
@@ -99,10 +101,7 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         return APPLanguages.count
     }
     
-    func pickerView(pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int)->String?{
+    func pickerView(pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int) -> String? {
         return APPLanguages.allKeys[row] as? String
     }
-    
-    
-    
 }

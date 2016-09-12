@@ -11,13 +11,16 @@ import UIKit
 /**
 *  解决IB中image不lcoalization的bug
 */
-extension UIImageView{
-    var locale:String{
-        get{
+@IBDesignable
+extension UIImageView {
+    
+    @IBInspectable
+    var local:String {
+        get {
             return ""
         }
-        set(newlocale){
-            self.image = localizedImage(newlocale)
+        set(newlocal) {
+            self.image = localizedImage(newlocal)
         }
     }
 }

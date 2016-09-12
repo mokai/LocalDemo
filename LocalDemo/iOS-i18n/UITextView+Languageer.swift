@@ -11,12 +11,15 @@ import UIKit
 /**
 *  解决IB中uitextview不lcoalization的bug
 */
-extension UITextView{
-    var locale:Bool{
+@IBDesignable
+extension UITextView {
+    
+    @IBInspectable
+    var local:Bool {
         get{
             return true
         }
-        set(newlocale){
+        set(newlocal) {
             self.text = localized(self.text)
         }
     }

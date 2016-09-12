@@ -21,13 +21,17 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         //判断当前语言是否为中文
-        var url:String?
+        var urlString: String!
         if(Languager.standardLanguager().currentLanguage != "en"){
-            url = baidu + text!
-        }else{
-            url = google + text!
+            urlString = baidu + text!
+        } else {
+            urlString = google + text!
         }
-        let req = NSURLRequest(URL: NSURL(string: url!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!)
+        
+        guard let urlStringEncoding = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()), let url = NSURL(string: urlStringEncoding) else {
+            return
+        }
+        let req = NSURLRequest(URL: url)
         webView.loadRequest(req)
     }
     
