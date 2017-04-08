@@ -10,58 +10,61 @@ import UIKit
 
 
 //MARK:APP语言
-let APPLanguages:NSDictionary = ["中文":"zh-Hans","English":"en"]
+let APPLanguages = [
+    "中文" : "zh-Hans",
+    "English" :"en"
+]
 
 class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
-    private var languageBgView: UIButton?
-    private var pickerView: UIPickerView?
+    fileprivate var languageBgView: UIButton?
+    fileprivate var pickerView: UIPickerView?
     
     @IBOutlet weak var languageBtn: UIButton!
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         hide()
     }
     
     //MARK:event
-    @IBAction func onLanguage(sender: UIButton) {
+    @IBAction func onLanguage(_ sender: UIButton) {
         if(languageBgView == nil){
-            languageBgView = UIButton(frame: UIScreen.mainScreen().bounds)
+            languageBgView = UIButton(frame: UIScreen.main.bounds)
             languageBgView?.backgroundColor = UIColor(red:0.000 , green:0.000 , blue:0.000, alpha:0.8)
-            languageBgView?.addTarget(self, action: #selector(MeViewController.hide), forControlEvents: .TouchUpInside)
+            languageBgView?.addTarget(self, action: #selector(MeViewController.hide), for: .touchUpInside)
             
-            let languageView = UIView(frame: CGRectMake(0, languageBgView!.frame.size.height - 200, languageBgView!.frame.size.width, 200))
+            let languageView = UIView(frame: CGRect(x: 0, y: languageBgView!.frame.size.height - 200, width: languageBgView!.frame.size.width, height: 200))
             self.languageBgView?.addSubview(languageView)
-            languageView.backgroundColor = UIColor.whiteColor()
+            languageView.backgroundColor = UIColor.white
             
-            let topView = UIView(frame: CGRectMake(0, 0, languageView.frame.size.width, 40))
+            let topView = UIView(frame: CGRect(x: 0, y: 0, width: languageView.frame.size.width, height: 40))
             languageView.addSubview(topView)
             
-            let cancelBtn = UIButton(frame: CGRectMake(10, 0, 60, 40))
+            let cancelBtn = UIButton(frame: CGRect(x: 10, y: 0, width: 60, height: 40))
             cancelBtn.tag = 10
             cancelBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
-                , forState: .Normal)
-            cancelBtn.addTarget(self, action: #selector(MeViewController.hide), forControlEvents: .TouchUpInside)
+                , for: UIControlState())
+            cancelBtn.addTarget(self, action: #selector(MeViewController.hide), for: .touchUpInside)
             topView.addSubview(cancelBtn)
             
-            let changeBtn = UIButton(frame: CGRectMake(topView.frame.size.width-70, 0, 70, 40))
+            let changeBtn = UIButton(frame: CGRect(x: topView.frame.size.width-70, y: 0, width: 70, height: 40))
             changeBtn.tag = 11
             changeBtn.setTitleColor(UIColor(red:0.949 , green:0.349 , blue:0.122, alpha:1.0)
-                , forState: .Normal)
-            changeBtn.addTarget(self, action: #selector(MeViewController.change), forControlEvents: .TouchUpInside)
+                , for: UIControlState())
+            changeBtn.addTarget(self, action: #selector(MeViewController.change), for: .touchUpInside)
             topView.addSubview(changeBtn)
             
-            self.pickerView = UIPickerView(frame: CGRectMake(0, 40, languageView.frame.size.width, languageView.frame.size.height-40))
+            self.pickerView = UIPickerView(frame: CGRect(x: 0, y: 40, width: languageView.frame.size.width, height: languageView.frame.size.height-40))
             self.pickerView!.dataSource = self
             self.pickerView!.delegate = self
             languageView.addSubview(self.pickerView!)
         }
-        let languagesVal:NSArray = APPLanguages.allValues
-        self.pickerView?.selectRow(languagesVal.indexOfObject(Languager.standardLanguager().currentLanguage), inComponent: 0, animated: false)
+        let languagesVal = Array(APPLanguages.values)
+        self.pickerView?.selectRow(languagesVal.index(of: Languager.standardLanguager().currentLanguage)!, inComponent: 0, animated: false)
         
-        (languageBgView?.viewWithTag(10) as! UIButton).setTitle(localized("取消"), forState: .Normal)
-        (languageBgView?.viewWithTag(11) as! UIButton).setTitle(localized("切换"), forState: .Normal)
-        UIApplication.sharedApplication().keyWindow?.addSubview(self.languageBgView!)
+        (languageBgView?.viewWithTag(10) as! UIButton).setTitle(localized("取消"), for: UIControlState())
+        (languageBgView?.viewWithTag(11) as! UIButton).setTitle(localized("切换"), for: UIControlState())
+        UIApplication.shared.keyWindow?.addSubview(self.languageBgView!)
         
         
         
@@ -73,14 +76,13 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     
     //MARK: 切换语言
     func change() {
-        let row = self.pickerView!.selectedRowInComponent(0)
-        let key = APPLanguages.allKeys[row] as! String
+        let row = self.pickerView!.selectedRow(inComponent: 0)
+        let key = Array(APPLanguages.keys)[row]
         
         //切换语言
-        Languager.standardLanguager().currentLanguage = APPLanguages.objectForKey(key) as! String
+        Languager.standardLanguager().currentLanguage = APPLanguages[key]!
         
-        
-        self.languageBtn.setTitle(key, forState: .Normal)
+        self.languageBtn.setTitle(key, for: UIControlState())
         self.hide()
         
         
@@ -88,20 +90,20 @@ class MeViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         let mainSb = UIStoryboard(name: "Main", bundle: nil)
         let rootViewC = mainSb.instantiateInitialViewController() as! UITabBarController
         rootViewC.selectedIndex = 1  //回到设置页面
-        UIApplication.sharedApplication().delegate!.window!!.rootViewController = rootViewC
+        UIApplication.shared.delegate!.window!!.rootViewController = rootViewC
     }
     
     
     //MARK:delegate
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return APPLanguages.count
     }
     
-    func pickerView(pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int) -> String? {
-        return APPLanguages.allKeys[row] as? String
+    func pickerView(_ pickerView: UIPickerView,titleForRow row:Int,forComponent component:Int) -> String? {
+        return Array(APPLanguages.values)[row]
     }
 }

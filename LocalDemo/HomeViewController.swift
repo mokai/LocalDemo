@@ -25,8 +25,8 @@ class HomeViewController: UIViewController {
      - parameter segue:
      - parameter sender:
      */
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let searchVC = segue.destinationViewController as? SearchViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let searchVC = segue.destination as? SearchViewController {
             searchVC.text = searchText.text
         }
     }

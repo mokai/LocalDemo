@@ -28,15 +28,15 @@ class SearchViewController: UIViewController {
             urlString = google + text!
         }
         
-        guard let urlStringEncoding = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()), let url = NSURL(string: urlStringEncoding) else {
+        guard let urlStringEncoding = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed), let url = URL(string: urlStringEncoding) else {
             return
         }
-        let req = NSURLRequest(URL: url)
+        let req = URLRequest(url: url)
         webView.loadRequest(req)
     }
     
-    @IBAction func back(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func back(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
