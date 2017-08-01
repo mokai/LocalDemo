@@ -291,7 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python ${SRCROOT}/${TARGET_NAME}/iOS-i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}//参数为StoryBoard，XIB所在目录";
+			shellScript = "python ${SRCROOT}/${TARGET_NAME}/iOS-i18n/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
